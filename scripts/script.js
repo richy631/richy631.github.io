@@ -56,14 +56,14 @@ var index = [1,1,2,2,
 			3,3,4,4,
 			5,5,6,6,
 			7,7,8,8];
-/*var randomArr = [2,2,2,2,2,2,2,2];
+var randomArr = [2,2,2,2,2,2,2,2];
 var n = 0;
 while(n <16){
 	var a = Math.floor(Math.random() * 8);     // returns a random integer from 0 to 7
 	if(randomArr[a]-- > 0){
 		index[n++] = a + 1;
 	}
-}	*/
+}	
 var cnt = 0;
 var success = 0;
 var like50Times = 0;
