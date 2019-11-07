@@ -7,9 +7,10 @@ var section2 = document.getElementById("section2");
 var section3 = document.getElementById("section3");
 var n = 8;
 setInterval(function(){
-	section1.style.backgroundImage = `url(images/${section1Slide[Math.floor(Math.random() * n)]}.jpg)`;
-	section2.style.backgroundImage = `url(images/${section2Slide[Math.floor(Math.random() * n)]}.jpg)`;
-	section3.style.backgroundImage = `url(images/${section3Slide[Math.floor(Math.random() * n)]}.jpg)`;
+	section1.style.backgroundImage = `url(images/${section1Slide[n%8]}.jpg)`;
+	section2.style.backgroundImage = `url(images/${section2Slide[n%8]}.jpg)`;
+	section3.style.backgroundImage = `url(images/${section3Slide[n%8]}.jpg)`;
+	n++;
 }, 5000);
 
 let root = document.documentElement;
