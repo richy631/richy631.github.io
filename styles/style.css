@@ -114,7 +114,7 @@ html{
 	margin:0 auto;
 	min-height:90vh;
 	padding:5vh;
-	font: 24px 'Arial';
+	font: 24px '標楷體';
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -126,17 +126,18 @@ html{
 	opacity:0;
 }
 .article div:hover{
-	opacity:0.8;
+	opacity:1;
 	background:#E16CF7;
 }
 .section1{
-	opacity:0.8;
+	opacity:0.5;
 	transition: all 1s linear;
 	color:#ecfb76;
 	font-weight:bold;
 	background-color:#fff;
 	background-image: url(../images/museum.jpg);
-	text-shadow:5px 4px 5px #575353;
+	/*text-shadow:5px 4px 5px #575353;*/
+	font-size: 30px;
 }
 .section2{
 	opacity:0.8;
@@ -144,8 +145,9 @@ html{
 	color:#ecfb76;
 	background-color:#fff;
 	background-image: url(../images/museum2.jpg);
-	text-shadow:5px 4px 5px #575353;
+	/*text-shadow:5px 4px 5px #575353;*/
 	font-weight:bold;
+	font-size: 30px;
 }
 .section3{
 	opacity:0.8;
@@ -153,13 +155,15 @@ html{
 	color:#b6fb76;
 	background-color:#fff;
 	background-image: url(../images/love.jpg);
-	text-shadow:5px 4px 5px #575353;
+	/*text-shadow:5px 4px 5px #575353;*/
+	font-size: 30px;
 }
 .section4{
 	color:#76fbd1;
 	background-color:#fff;
 	background-image: url(../images/sunset.jpg);
-	text-shadow:5px 4px 5px #575353;
+	/*text-shadow:5px 4px 5px #575353;*/
+	font-size: 30px;
 }
 #footer{
 	background-image: radial-gradient(circle at calc(var(--mouse-x) * 100%) calc(var(--mouse-y) * 100%), #e3ed2a, #ffa606, #ff5745, #e50074, #910399);
@@ -169,6 +173,7 @@ html{
 	width:100%;
 	height:50vh;   /* Height of the footer */
 	color:#0B11A2;
+	font-size:30px;
 }
 #footerTable table{
 	width:100%;
