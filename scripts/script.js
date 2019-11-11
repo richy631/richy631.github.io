@@ -7,9 +7,10 @@ var section2 = document.getElementById("section2");
 var section3 = document.getElementById("section3");
 var n = 8;
 setInterval(function(){
-	section1.style.backgroundImage = `url(images/${section1Slide[Math.floor(Math.random() * n)]}.jpg)`;
-	section2.style.backgroundImage = `url(images/${section2Slide[Math.floor(Math.random() * n)]}.jpg)`;
-	section3.style.backgroundImage = `url(images/${section3Slide[Math.floor(Math.random() * n)]}.jpg)`;
+	section1.style.backgroundImage = `url(images/${section1Slide[n%8]}.jpg)`;
+	section2.style.backgroundImage = `url(images/${section2Slide[n%8]}.jpg)`;
+	section3.style.backgroundImage = `url(images/${section3Slide[n%8]}.jpg)`;
+	n++;
 }, 5000);
 
 let root = document.documentElement;
@@ -517,57 +518,7 @@ function click15(){
 		removeAndReset();
 	}
 }
-/*
-function addClick0(){
-	arrBack[0].addEventListener("click", click0);
-}
-function addClick1(){
-	arrBack[1].addEventListener("click", click1);
-}
-function addClick2(){
-	arrBack[2].addEventListener("click", click2);
-}
-function addClick3(){
-	arrBack[3].addEventListener("click", click3);
-}
-function addClick4(){
-	arrBack[4].addEventListener("click", click4);
-}
-function addClick5(){
-	arrBack[5].addEventListener("click", click5);
-}
-function addClick6(){
-	arrBack[6].addEventListener("click", click6);
-}
-function addClick7(){
-	arrBack[7].addEventListener("click", click7);
-}
-function addClick8(){
-	arrBack[8].addEventListener("click", click8);
-}
-function addClick9(){
-	arrBack[9].addEventListener("click", click9);
-}
-function addClick10(){
-	arrBack[10].addEventListener("click", click10);
-}
-function addClick11(){
-	arrBack[11].addEventListener("click", click11);
-}
-function addClick12(){
-	arrBack[12].addEventListener("click", click12);
-}
-function addClick13(){
-	arrBack[13].addEventListener("click", click13);
-}
-function addClick14(){
-	arrBack[14].addEventListener("click", click14);
-}
-function addClick15(){
-	arrBack[15].addEventListener("click", click15);
-	
-}
-*/
+
 function addClick( index ){
 	switch(index){	
 		case 0:
@@ -620,56 +571,7 @@ function addClick( index ){
 		break;
 	}
 }
-/*
-function removeClick0(){
-	arrBack[0].removeEventListener("click", click0);
-}
-function removeClick1(){
-	arrBack[1].removeEventListener("click", click1);
-}
-function removeClick2(){
-	arrBack[2].removeEventListener("click", click2);
-}
-function removeClick3(){
-	arrBack[3].removeEventListener("click", click3);
-}
-function removeClick4(){
-	arrBack[4].removeEventListener("click", click4);
-}
-function removeClick5(){
-	arrBack[5].removeEventListener("click", click5);
-}
-function removeClick6(){
-	arrBack[6].removeEventListener("click", click6);
-}
-function removeClick7(){
-	arrBack[7].removeEventListener("click", click7);
-}
-function removeClick8(){
-	arrBack[8].removeEventListener("click", click8);
-}
-function removeClick9(){
-	arrBack[9].removeEventListener("click", click9);
-}
-function removeClick10(){
-	arrBack[10].removeEventListener("click", click10);
-}
-function removeClick11(){
-	arrBack[11].removeEventListener("click", click11);
-}
-function removeClick12(){
-	arrBack[12].removeEventListener("click", click12);
-}
-function removeClick13(){
-	arrBack[13].removeEventListener("click", click13);
-}	
-function removeClick14(){
-	arrBack[14].removeEventListener("click", click14);
-}	
-function removeClick15(){
-	arrBack[15].removeEventListener("click", click15);
-}
-*/
+
 function removeClick( index ){
 	switch(index){	
 		case 0:
