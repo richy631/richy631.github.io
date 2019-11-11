@@ -114,70 +114,78 @@ html{
 	margin:0 auto;
 	min-height:90vh;
 	padding:5vh;
-	font: 24px '標楷體';
+	font: 30px '標楷體';
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
-	line-height:28px;
+	line-height:30px;
 }
+
 .article div{
+	color:#000;
 	transition: all 0.5s linear;
-	opacity:0;
+	background-color:rgba(255, 255, 255, 0.5);
+	display:inline-block;
 }
+/*
 .article div:hover{
 	opacity:1;
 	background:#E16CF7;
 }
-.section4 div{
+*/
+.sectionLast div{
+	color:#000;
+	transition: all 0.5s linear;
+	display:inline-block;
 	transition: all 0.5s linear;
 	opacity:0;
 }
-.section4 div:hover{
+.sectionLast div:hover{
 	opacity:1;
-	background:#E16CF7;
+	background-color:rgba(255, 255, 255, 0.5);
 }
 .section1{
-	opacity:0.5;
+	opacity:1;
 	transition: all 1s linear;
-	color:#ecfb76;
 	font-weight:bold;
 	background-color:#fff;
 	background-image: url(../images/museum.jpg);
-	/*text-shadow:5px 4px 5px #575353;*/
-	font-size: 30px;
+	text-shadow:5px 4px 5px #575353;
 }
 .section2{
-	opacity:0.8;
+	opacity:1;
 	transition: all 1s linear;
-	color:#ecfb76;
 	background-color:#fff;
 	background-image: url(../images/museum2.jpg);
-	/*text-shadow:5px 4px 5px #575353;*/
-	font-weight:bold;
-	font-size: 30px;
+	text-shadow:5px 4px 5px #575353;
 }
 .section3{
-	opacity:0.8;
+	opacity:1;
 	transition: all 1s linear;
-	color:#b6fb76;
 	background-color:#fff;
 	background-image: url(../images/love.jpg);
-	/*text-shadow:5px 4px 5px #575353;*/
-	font-size: 30px;
+	text-shadow:5px 4px 5px #575353;
 }
 .section4{
+	opacity:1;
+	transition: all 1s linear;
+	background-color:#fff;
+	background-image: url(../images/love.jpg);
+	text-shadow:5px 4px 5px #575353;
+}
+.sectionLast{
 	margin:0 auto;
 	color:#76fbd1;
 	min-height:90vh;
 	padding:5vh;
+	font: 30px '標楷體';
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	background-color:#fff;
 	background-image: url(../images/sunset.jpg);
-	/*text-shadow:5px 4px 5px #575353;*/
-	font-size: 30px;
+	text-shadow:5px 4px 5px #575353;
 }
 #footer{
 	background-image: radial-gradient(circle at calc(var(--mouse-x) * 100%) calc(var(--mouse-y) * 100%), #e3ed2a, #ffa606, #ff5745, #e50074, #910399);
